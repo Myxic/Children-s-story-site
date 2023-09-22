@@ -1,0 +1,455 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: "Open Sans", sans-serif; */
+    /* font-family:'Times New Roman', Times, serif; */
+
+  
+    background: #f6f9ff;
+    color: #444444;
+
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# DASHBOARD
+--------------------------------------------------------------*/
+
+/*----------------------------------
+# HEADER
+------------------------------------*/
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    height: 70px;
+    max-height: 70px;
+    top: 0%;
+    background-color: var(--bs-white);
+    z-index: 9999;
+
+
+}
+
+header div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.navs ul {
+
+    width: 100%;
+    font-weight: 900;
+    height: 100%;
+    color: black;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+
+.navs ul li {
+    border-bottom: 4px solid transparent;
+    height: 100%;
+
+
+}
+
+.navs ul li:hover {
+    border-bottom: 4px solid var(--bs-green);
+}
+
+.navs ul li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+
+}
+
+/*-----------------------------------------
+# main
+------------------------------------------*/
+main {
+    margin-top: 71px;
+
+   
+
+}
+
+/*-----------------------------------------
+# hero
+------------------------------------------*/
+
+.hero-container {
+    width: 100%;
+}
+
+.hero-container figure {
+    display: none;
+
+}
+
+.hero-container .active {
+    display: flex !important;
+    width: 100%;
+    position: relative;
+    height: 615px;
+    max-height: 615px;
+    margin: 0;
+
+
+}
+
+.hero-container .active img {
+    width: 100%;
+
+}
+
+.Herodetail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #44444440;
+    color: white;
+    
+}
+
+.hero-container .active .Herodetail>div {
+    width: 40%;
+    height: 55%;
+    transform: translate(20%, 30%);
+    position: absolute;
+    top: 165px;
+
+
+}
+
+.hero-container .active div input[type="button"] {
+    width: 50%;
+    padding: 10px 5px;
+    background-color: rgb(255, 213, 0);
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.hero-container .active div input[type="button"]:hover {
+    background-color: var(--bs-yellow);
+}
+
+.page {
+    width: 60%;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.page div {
+    box-shadow: 0px 0px 2px 0px #444444;
+    background-color: rgba(245, 245, 245, 0.613);
+    width: 50px;
+    height: 5px;
+}
+
+.page .ActiveHero {
+    background-color: white !important;
+    transition: 0.6s ease;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: small;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*----------------------------------
+# GetToKnowUs
+------------------------------------*/
+.GetToKnowUs {
+    width: 100%;
+    min-height: 800px;
+    padding: 60px 160px;
+    
+
+}
+
+.GetToKnowUs h1 {
+    font-weight: 900;
+}
+
+.GetToKnowUs>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+
+.GetToKnowUs>div>div {
+    width: 32%;
+    /* background-color: white ; */
+}
+
+.GetToKnowUs>div>div figure img {
+    width: 100%;
+}
+
+.GetToKnowUs>div>div>h3 {
+    font-weight: 600;
+
+
+}
+
+.GetToKnowUs>div>div>h3>a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.GetToKnowUs>div>div>h3>a:hover {
+    border-bottom: 3px solid black;
+}
+.GetToKnowUs>div>div>h6>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-bottom: 2px solid var(--bs-green);
+}
+.GetToKnowUs>div>div>h6>a:hover{
+    background-color: rgb(105, 240, 159);
+    transition: 0.6s ease;
+}
+
+.GetToKnowUs > div:nth-child(3) {
+    display: block;
+    border-top: .1em solid rgb(219, 216, 216);
+    border-bottom: .1em solid rgb(219, 216, 216);
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.GetToKnowUs > div:nth-child(3) > span{
+    display: block;
+    padding: 1px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.GetToKnowUs > div:nth-child(3) > p{
+    margin-bottom: 40px;
+}
+
+.GetToKnowUs > div:nth-child(3) > span a{
+    padding: 15px 30px ;
+    
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    background-color: #f36b35;
+}
+
+.GetToKnowUs > div:nth-child(3) > span a:hover{
+    background-color: #f04b09;
+}
+
+/*----------------------------------
+# GetToKnowUs
+------------------------------------*/
+.TakeAction{
+    padding: 0px 160px 40px 160px; 
+    width: 100%;
+    
+  
+}
+
+.TakeAction > div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  
+}
+.TakeAction>div>div{
+    width: 32%;
+    box-shadow: 0 1px 8px rgba(0,0,0,.16);
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 500px;
+    position: relative;
+    
+}
+
+.TakeAction>div>div:hover{
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.485);
+}
+.TakeAction>div>div>figure>img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.TakeAction>div>div>div{
+    padding: 10px 25px 60px 25px;
+  
+   
+    
+}
+
+.TakeAction>div>div>div>a:nth-child(1){
+    
+    text-decoration: none;
+    color: #444444ac;
+}
+.TakeAction>div>div>div>a:hover{
+    color: #444444;
+}
+.TakeAction>div>div>div>a:nth-child(2){
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+.TakeAction>div>div>div>a:nth-child(2):hover{
+    border-bottom: 3px solid black;
+    
+}
+.TakeAction>div>div>div>span{
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    display: block;
+    
+    
+}
+
+.TakeAction>div>div>div>span>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+ 
+    background-color: #ffc107ad;
+  
+}
+
+.TakeAction>div>div>div>span>a:hover{
+    background-color: var(--bs-yellow);
+}
+
+/*----------------------------------
+# RecentStory
+------------------------------------*/
+.RecentStory{
+    padding: 0px 160px 40px 160px; 
+    width: 100%;
+
+    height: 400px;
+}
+.RecentStory>h1{
+    font-weight: 800;
+}
+.RecentStory>div>.story{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+.RecentStory>div>.story>figure{
+    width: 900px;
+
+}
+.RecentStory>div>.story>figure>img{
+    width: 100%;
+    height: 250px;
+}
+
+.RecentStory>div>.story>div>p:nth-child(1)>a{
+   text-decoration: none;
+   color: #198700;
+}
+
+
+.RecentStory>div>.story>div>p:nth-child(1)>a:hover{
+    text-decoration:underline;
+    color: #198700;
+ }
+
+ .RecentStory>div>.story>div>p:nth-child(4)>a{
+    text-decoration: none;
+    color: #444444ce;
+ }
+
+ .RecentStory>div>.story>div>p:nth-child(4)>a:hover{
+    text-decoration: underline;
+ }
+
+ .RecentStory>span>b{
+    padding: 15px;
+    color:  #105301;
+    outline: 1px solid  #105301;
+    border-radius: 4px;
+    font-weight: 600;
+    margin:50px;
+ }
+
+ .RecentStory>span>b:hover{
+    background-color: #105301;
+    color: white;
+ }
+
+ /*----------------------------------
+# Footer
+------------------------------------*/
+

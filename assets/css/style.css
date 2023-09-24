@@ -488,5 +488,72 @@ header>div:nth-child(3)>nav>ul>li>a {
 /* ------------------------------- */
 
 .Newsletter{
-    background-color: green;
+    
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    
+   
+}
+.Newsletter>div{
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 60px;
+}
+.Newsletter>div>h2{
+    margin-bottom: 40px;
+    color: rgb(37, 34, 34);
+}
+
+.Newsletter>div>form{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Newsletter>div>form>input[type="email"],
+.Newsletter>div>form>input[type="button"]{
+    padding: 10px ;
+    border: 1px solid transparent;
+   
+    
+}
+.Newsletter>div>form>input[type="email"]:hover{
+
+    border:1px solid #444444;
+    
+}
+.Newsletter>div>form>input[type="button"]:hover{
+    border: 1px solid #444444;
+    background-color: #eb1345;
+}
+
+.Newsletter>div>form>input[type="email"]{
+    width: 40%;
+}
+.Newsletter>div>form>input[type="button"]{
+    width: 15%;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #de204c;
+    
+}
+
+
+
+
+/*-----------------------------
+# Footer ----------------
+/* ------------------------------- */
+footer{
+    
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+footer>div{
+    background-color: #444444;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }

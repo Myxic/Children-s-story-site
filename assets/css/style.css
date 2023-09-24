@@ -407,6 +407,7 @@ header>div:nth-child(3)>nav>ul>li>a {
 .blogPost {
     padding: 40px;
     text-align: center;
+   
     
 }
 
@@ -480,4 +481,12 @@ header>div:nth-child(3)>nav>ul>li>a {
 }
 .blogPost>span>a:hover{
     text-decoration: underline;
+}
+
+/*-----------------------------
+# Newsletter ----------------
+/* ------------------------------- */
+
+.Newsletter{
+    background-color: green;
 }

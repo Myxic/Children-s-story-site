@@ -3,8 +3,8 @@
 }
 
 * {
-    margin: 0 ;
-    padding: 0 ;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,18 +19,21 @@ li {
 a {
     text-decoration: none;
 }
+
 .section__title-text::after {
     content: "";
     width: 36px;
     height: 3px;
     background: #de204c;
     position: absolute;
-    left: 49%;
+    left: 48.5%;
     bottom: -12px;
-  }
-  .section__title-text{
+}
+
+.section__title-text {
     position: relative;
-  }
+}
+
 /*--------------------------------------------------------------
 # DASHBOARD
 -----------------------------------------------------------------*/
@@ -38,15 +41,17 @@ a {
 /*-----------------------------
 # header
 /* ------------------------------- */
-header{
+header {
     width: 100%;
-   text-align: center;
-  
+    text-align: center;
+
 }
-header>.logo{
+
+header>.logo {
     padding: 10px 15px;
 }
-header>div:nth-child(1)>a{
+
+header>div:nth-child(1)>a {
     width: 100%;
     background-color: #ff003b;
     padding: 12px;
@@ -54,29 +59,35 @@ header>div:nth-child(1)>a{
     font-size: 14px;
 
 }
-header>div:nth-child(1)>a:hover{
+
+header>div:nth-child(1)>a:hover {
     background-color: #ff003cdc;
 }
-header>div{
+
+header>div {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header>div>nav{
+
+header>div>nav {
     width: 50%;
 
-    
+
 }
-header>div:nth-child(3)>nav>ul{
-   
+
+header>div:nth-child(3)>nav>ul {
+
     display: flex;
     justify-content: space-between;
 
 }
-header>div:nth-child(3)>nav>ul>li>a{
+
+header>div:nth-child(3)>nav>ul>li>a {
     color: black;
 }
+
 .dropdown-menu-arrow::before {
     content: "";
     width: 13px;
@@ -88,33 +99,35 @@ header>div:nth-child(3)>nav>ul>li>a{
     transform: rotate(45deg);
     border-top: 1px solid rgb(234, 237, 241);
     border-left: 1px solid rgb(234, 237, 241);
-  }
-.dropdown-menu-arrow{
+}
+
+.dropdown-menu-arrow {
     border-radius: 0px;
     padding: 10px 15px;
     transform: translate3d(-277px, 150px, 0px) !important;
 }
-.dropdown-item{
+
+.dropdown-item {
     padding: 10px 15px;
 }
 
 /*-----------------------------
 # main
-/* ------------------------------- */   
+/* ------------------------------- */
 
 
 
 /*-----------------------------
 # hero
 /* ------------------------------- */
-.hero-container{
+.hero-container {
     background-image: url("../img/news-4.jpg");
     width: 100%;
     height: 700px;
     position: relative;
 }
 
-.hero-container>div{
+.hero-container>div {
     position: absolute;
     width: 39%;
     height: 330px;
@@ -122,22 +135,24 @@ header>div:nth-child(3)>nav>ul>li>a{
     padding: 10px 15px;
     bottom: 75px;
 }
-.hero-container>div>h2{
+
+.hero-container>div>h2 {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 30px;
     letter-spacing: 3px;
 }
-.hero-container>div>h2::after{
+
+.hero-container>div>h2::after {
     left: 45%;
 }
 
-.hero-container>div>a{
+.hero-container>div>a {
     position: absolute;
     padding: 10px 40px;
     bottom: 40px;
     transform: translateX(120%);
-    background-color:  #de204c;
+    background-color: #de204c;
     border-radius: 4px;
     text-align: center;
     color: white;
@@ -151,37 +166,42 @@ header>div:nth-child(3)>nav>ul>li>a{
 # ABOUTUS
 /* ------------------------------- */
 
-.aboutUs{
- 
+.aboutUs {
+
     text-align: center;
     padding: 40px;
 }
-.aboutUs>h2{
-    font-weight: 300;  
-    letter-spacing: 2px; 
+
+.aboutUs>h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
-.aboutUs>div{
+.aboutUs>div {
     padding: 20px 40px;
     margin-top: 30px;
     display: flex;
     width: 100%;
 }
-.aboutUs>div>div>h6{
+
+.aboutUs>div>div>h6 {
     letter-spacing: 2px;
 }
-.aboutUs>div>div>p{
+
+.aboutUs>div>div>p {
     padding: 10px;
     font-size: 1rem;
     line-height: 25px;
     letter-spacing: 2px;
 }
-.aboutUs>div>div>span>a{
+
+.aboutUs>div>div>span>a {
     text-decoration: underline;
     color: black;
     border-radius: 4px;
 }
-.aboutUs>div>div>span>a:hover{
+
+.aboutUs>div>div>span>a:hover {
     background-color: #cf3d5fdd;
     color: white;
     transition: all 800ms ease;
@@ -191,32 +211,35 @@ header>div:nth-child(3)>nav>ul>li>a{
 # BOOKS
 /* ------------------------------- */
 
-.books{
+.books {
     padding: 40px;
     text-align: center;
-    height: 800px;
+
+
 }
 
-.books>div{
+.books>div {
     display: flex;
     justify-content: space-between;
 }
 
-.books>div>div{
+.books>div>div {
     /* width: 32%; */
     display: block;
     position: relative;
-    padding: 15px ;
+    padding: 15px;
     /* background-color: #de204c; */
-    
-   
+
+
 }
-.books>div>div>div{
+
+.books>div>div>div {
     position: relative;
     height: 550px;
     margin-bottom: 20px;
 }
-.books>div>div>div>img{
+
+.books>div>div>div>img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -225,55 +248,234 @@ header>div:nth-child(3)>nav>ul>li>a{
     object-fit: cover;
     transition: opacity 0.2s ease;
 }
-.books>div>div>div>.displayImg{
-    opacity: 1;   
-}
 
-.books>div>div>div>.displayImgHover{
-    opacity: 0;
-}
-
-.books>div>div>div:hover>.displayImgHover{
+.books>div>div>div>.displayImg {
     opacity: 1;
 }
-.books>div>div>div:hover>.displayImg{
+
+.books>div>div>div>.displayImgHover {
     opacity: 0;
 }
 
-.books>div>div>div>span{
+.books>div>div>div:hover>.displayImgHover {
+    opacity: 1;
+}
+
+.books>div>div>div:hover>.displayImg {
+    opacity: 0;
+}
+
+.books>div>div>div>span {
     position: absolute;
-    top:10px;
+    top: 10px;
     right: -10px;
     padding: 10px 15px;
     color: white;
     background-color: #de204c;
 }
-.books>div>div>div>a{
+
+.books>div>div>div>a {
     opacity: 0;
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     padding: 10px 15px;
-    background-color:#de204c;
-    
+    background-color: #de204c;
+
     color: white;
 }
 
-.books>div>div:hover>div>a{
+.books>div>div:hover>div>a {
     opacity: 1;
 }
 
-.books>div>div>h4{
+.books>div>div>h4 {
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 30px;
 }
-.books>div>div>span{
+
+.books>div>div>span {
     color: #ff003b;
     letter-spacing: 1.5px;
 }
-.books>div>div>span>span{
+
+.books>div>div>span>span {
     text-decoration: line-through;
     color: #444444;
+}
+
+
+/*-----------------------------
+# Testimonials
+/* ------------------------------- */
+
+.Testimonials {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.Testimonials>h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 200;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.next {
+    right: 60px;
+
+
+}
+
+.prev {
+    left: 60px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.TestimonialsComments {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.TestimonialsComments>div {
+    display: none;
+    transition: display .06s ease-in-out;
+}
+
+.TestimonialsComments>.TestimonialsActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.TestimonialsComments>div>figure {
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+.TestimonialsComments>div>figure>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.TestimonialsComments>div>h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+
+}
+
+
+/*-----------------------------
+# Blog Posts ----------------
+/* ------------------------------- */
+
+.blogPost {
+    padding: 40px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.blogPost>h2 {
+    margin-bottom: 40px;
+}
+
+.blogPost>div {
+    width: 100%;
+    display: flex;
+}
+
+.blogPost>div>div {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.blogPost>div>div>figure {
+    width: 100%;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+.blogPost>div>div>figure>img {
+    width: 100%;
+    
+}
+
+.blogPost>div>div>span {
+    position: absolute;
+    color: white;
+    min-width: 90px;
+    text-align: center;
+    top: 50%;
+   
+    right: auto;
+    padding: 6px 18px;
+    left: 33%;
+    right: 33%;
+    background-color: #de204c;
+}
+
+.blog__details {
+    padding: 25px;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+.blog__details>h3 {
+    letter-spacing: 2px;
+
+}
+
+.blogPost>span{
+    position: absolute;
+    width: 100%;
+    background-color: red;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogPost>span>a{
+    width: 100%;
+    background: goldenrod;
 }

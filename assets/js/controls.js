@@ -1,50 +1,70 @@
-
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-let nextpage = document.querySelector("#de_comment");
-
-
+let nextpage = document.querySelector(".TestimonialsComments");
 
 next.onclick = function () {
-  let Active = document.querySelector("#de_comment .active");
-  var CurrentCommentIndex = getChildIndex(nextpage, Active);
+  let TestimonialsActive = document.querySelector(".TestimonialsActive");
+  var CurrentCommentIndex = getChildIndex(nextpage, TestimonialsActive);
 
   if (
     CurrentCommentIndex >= 0 &&
     CurrentCommentIndex < nextpage.childElementCount
   ) {
     for (b = 0; b < nextpage.childElementCount; b++) {
-      nextpage.children[CurrentCommentIndex].classList.remove("active");
+      nextpage.children[CurrentCommentIndex].classList.remove(
+        "TestimonialsActive"
+      );
+     
     }
 
-    if (CurrentCommentIndex < nextpage.childElementCount - 1) {
-      nextpage.children[CurrentCommentIndex + 1].classList.add("active");
-    } else if (CurrentCommentIndex == nextpage.childElementCount - 1) {
-      nextpage.children[0].classList.add("active");
-    }
+      if (CurrentCommentIndex < nextpage.childElementCount - 1) {
+        nextpage.children[CurrentCommentIndex + 1].classList.add(
+          "TestimonialsActive"
+        );
+        
+      
+      } else if (CurrentCommentIndex == nextpage.childElementCount - 1) {
+        console.log("too many comments");
+        nextpage.children[0].classList.add("TestimonialsActive");
+        CurrentCommentIndex = 0;
+      }
+  
   }
+  
 };
 
 prev.onclick = function () {
-  let Active = document.querySelector("#de_comment .active");
-  var CurrentCommentIndex = getChildIndex(nextpage, Active);
+  let TestimonialsActive = document.querySelector(".TestimonialsActive");
+  var CurrentCommentIndex = getChildIndex(nextpage, TestimonialsActive);
 
   if (
     CurrentCommentIndex >= 0 &&
     CurrentCommentIndex < nextpage.childElementCount
   ) {
     for (b = 0; b < nextpage.childElementCount; b++) {
-      nextpage.children[CurrentCommentIndex].classList.remove("active");
+      nextpage.children[CurrentCommentIndex].classList.remove(
+        "TestimonialsActive"
+      );
     }
 
     if (
       CurrentCommentIndex <= nextpage.childElementCount - 1 &&
       CurrentCommentIndex > 0
     ) {
-      nextpage.children[CurrentCommentIndex - 1].classList.add("active");
+      nextpage.children[CurrentCommentIndex - 1].classList.add(
+        "TestimonialsActive"
+      );
     } else if (CurrentCommentIndex <= 0) {
-      nextpage.children[nextpage.childElementCount - 1].classList.add("active");
+      nextpage.children[nextpage.childElementCount - 1].classList.add(
+        "TestimonialsActive"
+      );
     }
   }
+ 
 };
+
+function getChildIndex(parentElement, childElement) {
+  var childIndex = Array.from(parentElement.children).indexOf(childElement);
+  return childIndex;
+}

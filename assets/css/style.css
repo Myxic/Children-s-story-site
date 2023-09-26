@@ -475,8 +475,8 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-
-    color: rgba(0, 0, 0, 1.0);
+    background-color:rgba(0, 0, 0, 1.0); 
+    color: rgba(245, 245, 253, 1.0);
 }
 
 .TestimonialsComments {

@@ -191,7 +191,12 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
     height: 330px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 15px;
-    bottom: 75px;
+    top: 50%;
+    
+    /* bottom: 75px; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 .hero-container>div>h2 {
@@ -231,6 +236,7 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
         width: 50%;
         
     }
+   
 }
 /*-----------------------------
 # ABOUTUS

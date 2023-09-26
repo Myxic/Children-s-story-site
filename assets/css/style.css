@@ -204,6 +204,7 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
     line-height: 1.5;
     margin-bottom: 30px;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .hero-container>div>h2::after {

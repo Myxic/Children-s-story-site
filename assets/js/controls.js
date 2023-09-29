@@ -64,6 +64,8 @@ prev.onclick = function () {
  
 };
 
+
+
 function getChildIndex(parentElement, childElement) {
   var childIndex = Array.from(parentElement.children).indexOf(childElement);
   return childIndex;

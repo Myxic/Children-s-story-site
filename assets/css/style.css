@@ -806,3 +806,53 @@ footer>div {
         width: 80%;
     }
 }
+
+/*--------------------------------------------------------------
+# Blogs page ----------------------------------------------------------------
+-----------------------------------------------------------------*/
+.BlogNavs >h2{
+    text-align: center;
+    margin: 30px auto;
+    margin-bottom: 60px;
+}
+.BlogNavs > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+}
+.BlogNavs > div > nav{
+    width: 800px;
+
+}
+
+.BlogNavs > div > nav > ul{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.BlogNavs > div > nav > ul >li >a{
+    color: #444444;
+    padding: 10px;
+}
+.activeBlogNav,
+.BlogNavs > div > nav > ul >li >a:hover{
+    background-color: #44444458;
+}
+
+
+.blogsectionPage > div{
+    display: grid !important;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@media (max-width: 900px) {
+    .blogsectionPage > div{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}

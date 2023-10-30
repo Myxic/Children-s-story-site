@@ -44,6 +44,7 @@ a {
 header {
     width: 100%;
     text-align: center;
+    text-transform: uppercase;
 
 }
 
@@ -72,7 +73,7 @@ header>div {
 }
 
 header>div>nav {
-    width: 700px;
+    width: 900px;
 
 
 }
@@ -109,9 +110,11 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
 .dropdown-menu-arrow {
     border-radius: 0px;
     padding: 10px 15px;
-    transform: translate3d(-277px, 150px, 0px) !important;
+    transform: translate3d(-377px, 150px, 0px) !important;
 }
-
+.BooksNav{
+    transform: translate3d(-677px, 150px, 0px) !important;
+}
 .dropdown-item {
     padding: 10px 15px;
 }
@@ -856,3 +859,103 @@ footer>div {
     }
 
 }
+
+
+
+
+/*--------------------------------------------------------------
+# Summary page ----------------------------------------------------------------
+/* -------------------------------------------------------------- */
+.SummaryPage{
+    padding: 30px 160px;
+   
+    min-height: 900px;
+    
+}
+.SummaryPage > .summary{
+    width: 70%;
+    
+    margin: auto ;
+    text-align: center;
+   
+}
+.SummaryPage > .summary >.heading >span {
+    padding: 10px;
+    color: white;
+    background-color: #eb1345;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+}
+.SummaryPage > .summary > .heading >  h2{
+    font-weight: 300;
+    width: 70%;
+    margin: 20px auto;
+    color: black;
+}
+.SummaryPage .summaryDetails{
+    text-align: left;
+    color: black;
+}
+.SummaryPage button{
+    width: fit-content;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #eb1345;
+    
+
+}
+.SummaryPage button span{
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 1fr 3fr;
+    
+}
+.SummaryPage button:hover{
+    background-color: #de204c;
+}
+.SummaryPage button a{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+   
+}
+.SummaryPage .socialLinks{
+    width: 60%;
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.SummaryPage .socialLinks a{
+    font-size: 2rem;
+    color: black;
+}
+@media (max-width: 900px) {
+    .SummaryPage{
+        padding: 20px;
+        
+        
+    }
+    .SummaryPage .summary{
+        width: 100%;    
+    }
+    .SummaryPage button{
+        padding: 2px;
+        
+        
+    }
+    .SummaryPage .socialLinks{
+        width: 90%;
+       
+    }
+
+
+}
+
+
+
+

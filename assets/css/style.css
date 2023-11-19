@@ -2,6 +2,16 @@
     scroll-behavior: smooth;
 }
 
+
+.logo>img {
+    max-width: 80px;
+}
+
+.BooksNav {
+    transform: translate3d(-677px, 150px, 0px) !important;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,8 +36,10 @@ a {
     height: 3px;
     background: #de204c;
     position: absolute;
-    left: 48.5%;
+    left: 50%;
     bottom: -12px;
+    transform: translateX(-50%);
+   
 }
 
 .section__title-text {
@@ -101,7 +113,7 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
     background: rgb(255, 255, 255);
     position: absolute;
     top: -7px;
-    left: 20px;
+    right: 59px;
     transform: rotate(45deg);
     border-top: 1px solid rgb(234, 237, 241);
     border-left: 1px solid rgb(234, 237, 241);
@@ -110,11 +122,13 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
 .dropdown-menu-arrow {
     border-radius: 0px;
     padding: 10px 15px;
-    transform: translate3d(-377px, 150px, 0px) !important;
+    transform: translate3d(-427px, 150px, 0px) !important;
 }
-.BooksNav{
-    transform: translate3d(-677px, 150px, 0px) !important;
-}
+
+
+
+
+
 .dropdown-item {
     padding: 10px 15px;
 }
@@ -164,8 +178,7 @@ header>div:nth-child(3)>nav>ul>li>a:hover {
     }
 
     .burgerNav>ul>li>.dropdown-menu-arrow {
-        transform: translate3d(-47px, 360px, 0px) !important;
-
+        transform: translate3d(67px, 300px, 0px) !important
     }
 
     .close,
@@ -776,21 +789,23 @@ footer>div {
 # AboutUs page ----------------------------------------------------------------
 -----------------------------------------------------------------*/
 
-.aboutUsPage{
+.aboutUsPage {
     letter-spacing: 1.5px;
 }
-.aboutUsContainter{
+
+.aboutUsContainter {
     width: 50%;
     margin: auto;
 }
 
 .aboutUsHeader {
-   text-align: center;
-   margin-bottom: 60px;
-   margin-top: 40px;
-    
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+
 }
-.aboutUsHeader figure{
+
+.aboutUsHeader figure {
     width: 60%;
     margin: 30px auto;
     display: flex;
@@ -800,12 +815,13 @@ footer>div {
 }
 
 @media (max-width:1200px) {
-    .aboutUsContainter{ 
+    .aboutUsContainter {
         width: 70%;
     }
 }
+
 @media (max-width:900px) {
-    .aboutUsContainter{ 
+    .aboutUsContainter {
         width: 80%;
     }
 }
@@ -813,49 +829,58 @@ footer>div {
 /*--------------------------------------------------------------
 # Blogs page ----------------------------------------------------------------
 -----------------------------------------------------------------*/
-.BlogNavs >h2{
+.BlogNavs>h2 {
     text-align: center;
     margin: 30px auto;
     margin-bottom: 60px;
 }
-.BlogNavs > div{
+
+.BlogNavs>div {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items:center ;
-    
+    align-items: center;
+
 }
-.BlogNavs > div > nav{
+
+.BlogNavs>div>nav {
     width: 800px;
 
 }
 
-.BlogNavs > div > nav > ul{
+.BlogNavs>div>nav>ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    
+    padding:0px;
+
 }
-.BlogNavs > div > nav > ul >li >a{
+
+.BlogNavs>div>nav>ul>li>a {
     color: #444444;
     padding: 10px;
 }
+
 .activeBlogNav,
-.BlogNavs > div > nav > ul >li >a:hover{
+.BlogNavs>div>nav>ul>li>a:hover {
     background-color: #44444458;
 }
 
 
-.blogsectionPage > div{
+.blogsectionPage>div {
     display: grid !important;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 900px) {
-    .blogsectionPage > div{
-        grid-template-columns: repeat(1,1fr);
+    .blogsectionPage>div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .BlogNavs>div>nav>ul>li {
+        margin: 20px 0px;
     }
 
 }
@@ -866,20 +891,22 @@ footer>div {
 /*--------------------------------------------------------------
 # Summary page ----------------------------------------------------------------
 /* -------------------------------------------------------------- */
-.SummaryPage{
+.SummaryPage {
     padding: 30px 160px;
-   
+
     min-height: 900px;
-    
+
 }
-.SummaryPage > .summary{
+
+.SummaryPage>.summary {
     width: 70%;
-    
-    margin: auto ;
+
+    margin: auto;
     text-align: center;
-   
+
 }
-.SummaryPage > .summary >.heading >span {
+
+.SummaryPage>.summary>.heading>span {
     padding: 10px;
     color: white;
     background-color: #eb1345;
@@ -887,70 +914,108 @@ footer>div {
     display: block;
     margin: 20px auto;
 }
-.SummaryPage > .summary > .heading >  h2{
+
+.SummaryPage>.summary>.heading>h2 {
     font-weight: 300;
     width: 70%;
     margin: 20px auto;
     color: black;
 }
-.SummaryPage .summaryDetails{
-    text-align: left;
+
+.SummaryPage .summaryDetails {
+    text-align: justify;
     color: black;
 }
-.SummaryPage button{
+
+.SummaryPage button {
     width: fit-content;
     padding: 10px;
     margin-top: 30px;
     background-color: #eb1345;
-    
+
 
 }
-.SummaryPage button span{
+
+.SummaryPage button span {
     display: grid;
     margin: auto;
     text-align: center;
     grid-template-columns: 1fr 3fr;
-    
+
 }
-.SummaryPage button:hover{
+
+.SummaryPage button:hover {
     background-color: #de204c;
 }
-.SummaryPage button a{
+
+.SummaryPage button a {
     color: white;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items:center ;
-   
+    align-items: center;
+    padding: 10px;
+
 }
-.SummaryPage .socialLinks{
+
+.SummaryPage .socialLinks {
     width: 60%;
     display: grid;
     margin: 30px auto;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.SummaryPage .socialLinks a{
+
+.SummaryPage .socialLinks a {
     font-size: 2rem;
     color: black;
 }
+.summary > .thumbnail{
+    
+    display: flex;
+    margin: 40px auto;
+    box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.8);
+    width: 400px;
+}
+.summary > .thumbnail > img{
+    width: 100%;
+}
+.rating{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+   color: #de204c;
+   text-decoration:underline;
+    margin: 0px auto 0 auto;
+   
+}
 @media (max-width: 900px) {
-    .SummaryPage{
+    .SummaryPage {
         padding: 20px;
-        
-        
+
     }
-    .SummaryPage .summary{
-        width: 100%;    
+    .SummaryPage > .summary > .heading > h2
+    {
+        width: 98%;
     }
-    .SummaryPage button{
+    .summary > .thumbnail{
+        width: 300px; 
+    }
+    .SummaryPage .summary {
+        width: 100%;
+    }
+
+    .SummaryPage button {
         padding: 2px;
-        
-        
+
+
     }
-    .SummaryPage .socialLinks{
+    .rating{
+        width: 70%;
+    }
+    .SummaryPage .socialLinks {
         width: 90%;
-       
+
     }
 
 
@@ -959,3 +1024,83 @@ footer>div {
 
 
 
+/*--------------------------------------------------------------
+# PreviewBooks ----------------------------------------------------------------
+/* -------------------------------------------------------------- */
+
+
+.PreviewBooks {
+    padding: 60px 100px;
+    min-height: 700px;
+    margin: 40px 0px;
+}
+
+.PreviewBooks>div {
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.booksAvaliable {
+    height: 150px;
+     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.8);
+   
+    border-radius: 6px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.PreviewBooksContainer:has(>:hover) .booksAvaliable:not(:hover) {
+    opacity: .5 !important;
+}
+
+.booksAvaliable:hover {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.booksAvaliable>figure {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.booksAvaliable>div {
+    width: 65%;
+    padding: 10px;
+    font-size: 12px;
+    overflow: hidden;
+    color: #444444;
+}
+
+.booksAvaliable>figure>img {
+    width: 100%;
+    /* height: max-content; */
+}
+
+@media (max-width: 1000px) {
+    .PreviewBooks {
+        padding: 6px 25px;
+    }
+
+    .PreviewBooks>div {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .PreviewBooks {
+        padding: 6px 50px;
+    }
+    .PreviewBooks > div{
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+}
